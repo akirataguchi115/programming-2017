@@ -1,0 +1,32 @@
+
+public class Paaohjelma {
+
+    public static void main(String[] args) {
+        // esimerkkipääohjelma tehtävän ensimmäiseen kohtaan
+
+        Kasvatuslaitos haaganNeuvola = new Kasvatuslaitos();
+
+        Henkilo eero = new Henkilo("Eero", 1, 110, 7);
+        Henkilo pekka = new Henkilo("Pekka", 33, 176, 85);
+
+        System.out.println("punnituksia tehty " + haaganNeuvola.punnitukset());
+
+        haaganNeuvola.punnitse(eero);
+        haaganNeuvola.lisaa();
+        haaganNeuvola.punnitse(pekka);
+        haaganNeuvola.lisaa();
+
+        System.out.println("punnituksia tehty " + haaganNeuvola.punnitukset());
+
+        haaganNeuvola.punnitse(eero);
+        haaganNeuvola.lisaa();
+        haaganNeuvola.punnitse(eero);
+        haaganNeuvola.lisaa();
+        haaganNeuvola.punnitse(eero);
+        haaganNeuvola.lisaa();
+        haaganNeuvola.punnitse(eero);
+        haaganNeuvola.lisaa();
+
+        System.out.println("punnituksia tehty " + haaganNeuvola.punnitukset());
+    }
+}
